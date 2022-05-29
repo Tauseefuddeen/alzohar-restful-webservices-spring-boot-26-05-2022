@@ -99,7 +99,7 @@ public class ProductController {
 		return null;
 	}
 	//delete one 
-	@DeleteMapping("/products/{id")
+	@DeleteMapping("/products/{id}")
 	public Product deleteOne(@PathVariable("id")int id) {
 		for(int index = 0; index< products.size();index++) {
 			if(products.get(index).getId()==id) {
